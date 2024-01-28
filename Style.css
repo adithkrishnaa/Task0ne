@@ -1,66 +1,423 @@
 header{
     background-image: url('./bgm.png');
-    width: 100%;
     background-repeat: no-repeat;
-    object-fit: cover;
-    z-index: 1;
+    background-size: cover;
     height: 100vh;
 }
 
-nav{
-    display: flex;
-    padding: 2rem;
-    color: white;
-    z-index: 1;
-    margin-left: 10%;
+.menu-bar{
+    display: none;
 }
 
-ul{
-    margin: 0 auto;
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 2rem;
+    margin-left: 6%;
+    background-color:transparent;
 }
+
+.nav-list{
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
 
 .nav-ul{
     display: flex;
-    margin: 0 auto;
-    gap: 1rem;
+    margin:0 auto;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 li{
     list-style: none;
+    font-size: 1.5rem;
+    color: white;
+
 }
 
 .nav-button{
     display: flex;
-    margin-left: 30rem;
+    margin-left: 8rem;
 }
 
-button{
+.head-sub{
     padding: 1rem;
+    width: 100%;
     color: white;
     border-radius: 5px;
-    font-size: .75rem;
+    font-size: 1rem;
     font-weight: 600;
     background-color: rgb(156, 74, 233);
+    cursor: pointer;
 }
 
 .header-box{
     display: flex;
     padding: 20px;
+
 }
 
 .header-content{
-    background-color:transparent;
+    margin-top: 10%;
+    padding: 2rem;
+    background-color:white;
     margin-left: 10%;
     justify-content: center;
-    width: 50%;
+    width: 30%;
     border: 1px solid;
+    border-radius: 10px;
 }
 
 .header-content>h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .header-content>p{
+    font-size: 1.5rem;
+}
+select{
+    padding: 1rem;
+    width:  100%;
+    margin-bottom: 1rem;
+}
+
+/* Client */
+
+.clinent-text{
+    justify-content: center;
+    text-align: center;
+   padding: 2rem;
+}
+
+.clinent-text>h1{
     font-size: 2rem;
+    color: rgb(118, 0, 122);
+}
+
+.clinent-text>p{
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.client-img{
+    margin-top: 1rem;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Feature */
+
+.feature-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+}
+
+.fe-container {
+  text-align: left;
+}
+
+.feature-text>h1{
+    font-size: 2.5rem;
+}
+
+.feature-text>p{
+    font-size: 1.5rem;
+}
+.feature-list{
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+}
+
+.fea-items>h1{
+    color: rgb(75, 1, 136);
+}
+
+.fea-items>p{
+    font-size: 1.05rem;
+}
+
+.fe-img{
+    width: 100%;
+    justify-content: center;
+}
+
+.slider{
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    justify-items: center;
+    margin-left: 3rem;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    height: 450px;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.images input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid #f8e9e9 2px;
+    cursor: pointer;
+    transition: all 1s ease;
+    margin-top: -35px;
+    gap: 10px;
+}
+
+.dots label:hover{background: #ffff;}
+
+#img1:checked ~ .im1{
+    margin-left: 0;
+}
+#img2:checked ~ .im2{
+    margin-left: -100%;
+}
+#img3:checked ~ .im3{
+    margin-left: -200%;
+}
+
+.gal-head{
+    text-align: center;
+}
+
+.gal-head h1{
+    font-size: 1.5rem;
+    color: rgb(75, 1, 136);
+}
+
+.gal-head p{
+    font-size: 2rem;
+    color: rgb(95, 93, 93);
+    font-weight: 500;
+}
+
+.gal-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#price{
+    background: #0d091f;
+    color: #ffff;
+}
+.price-head{
+    text-align: center;
+    justify-content: center;
+}
+
+.plan-box{
+    border:1px solid   #ded8f8; 
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: inline;
+    padding: 1.5rem;
+
+}
+
+.mont{
+    padding: 1.15rem;
+    border: #0d091f;
+    border-radius: .5em;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.annu{
+    padding: 1.15rem;
+    border: #0d091f;
+    border-radius: .5em;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #0d091f;
+    color: white;
+}
+
+.price-box{
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.star-pack{
+    width: max-content;
+    padding: 2rem;
+    border: 1px solid rgb(204, 205, 238);
+    border-radius: 10px;
+}
+
+.fam-pack{
+    width: max-content;
+    padding: 2rem;
+    background-color: #ffff;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(12, 12, 29);
+}
+
+.pepole-con{
+    display: flex;
+    justify-content: center;
+}
+
+.peopl-img img{
+    width:90%;
+}
+
+.pepo-text {
+    width: 30%;
+    height: 100vh;
+    line-height: 3rem;
+}
+
+.pepo-text h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #4e4d50;
+}
+
+.pepo-text p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.pep-bnt{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    color: #792385;
+    font-weight:  bold;
+}
+
+.blog-head{
+    text-align: center;
+    justify-content: center;
+}
+
+.blog-head h1{
+    font-size: 1.25rem;
+    color: #792385;
+}
+
+.blog-head h4{
+    font-size: 2rem;
+    color: #4e4d50;
+    font-weight: 600;
+}
+
+.blog-item{
+    display: flex;
+    margin: 3rem;
+    gap: 1rem;
+    color: #4e4d50;
+}
+
+#footer{
+    background-color: #0d091f;
+    color: #ffff;
+    padding: 2rem;
+}
+
+.fooot-sub{
+    text-align: center;
+}
+
+.fooot-sub h1{
+    font-size: 2.5rem;
+    font-weight:500;
+}
+
+.fooot-sub p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #a6a4aaf3;
+}
+
+.foot-email{
+    padding: 1rem;
+}
+.foot-email input {
+    padding: 1.25rem;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #272336;
+    border: #0d091f;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.foot-email button{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background:white;
+    border: #0d091f;
+    border-radius: 5px;
+}
+
+.foot-menu{
+    display: flex;
+
+}
+
+.foot-ul{
+    margin-left:10rem;
+    display: flex;
+    gap: 2rem;
+    align-items:   center;
+    justify-content:right ;
+    
+}
+
+.foot-log a{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.foot-logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 15px;
+    color: #ded8f8;
 }

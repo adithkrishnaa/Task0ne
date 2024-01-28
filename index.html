@@ -12,14 +12,24 @@
         <div class="nav-titel">
             <a href="#"><img src="./logo.svg" alt=""></a>
         </div>
+        <div class="menu-bar">
+            <ul class="manu-ul">
+                <li class="menu-li"><a href="#"></a>Home</li>
+                <li class="menu-li"><a href=""></a>Clients</li>
+                <li class="menu-li"><a href=""></a>Feature</li>
+                <li class="menu-li"><a href=""></a>Gallery</li>
+                <li class="menu-li"><a href=""></a>Pricing</li>
+                <li class="menu-li"><a href=""></a>Blog</li>
+            </ul>
+        </div>
         <div class="nav-list">
             <ul class="nav-ul">
-                <li class="nav-li"><a href="#"></a>Home</li>
-                <li class="nav-li"><a href=""></a>Clients</li>
-                <li class="nav-li"><a href=""></a>Feature</li>
-                <li class="nav-li"><a href=""></a>Gallery</li>
-                <li class="nav-li"><a href=""></a>Pricing</li>
-                <li class="nav-li"><a href=""></a>Blog</li>
+                <li class="nav-li"><a href="#">Home</a></li>
+                <li class="nav-li"><a href="#client">Clients</a></li>
+                <li class="nav-li"><a href="#feature">Features</a></li>
+                <li class="nav-li"><a href="#gallery">Gallery</a></li>
+                <li class="nav-li"><a href="">Pricing</a></li>
+                <li class="nav-li"><a href="">Blog</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -38,19 +48,19 @@
                 <option value="">Minneapolis,Minnesota</option>
                 <option value="">Chicago,Illinois</option>
             </select><br>
-            <button>
+            <button class="head-sub">
                 Subscribe
             </button>
         </div>
     </div>
 </header>
-<!-- <section>
-    <div>
-        <div>
+ <section id="client">
+    <div class="client-box">
+        <div class="clinent-text">
             <h1>Meet Our Clients</h1>
-            <p>This guys are using our service and they're more than happier ever.</p>
+            <p>This guys are using our service and they're <br> more than happier ever.</p>
         </div>
-        <div>
+        <div class="client-img">
             <img src="./uber.png" alt="">
             <img src="./google.png" alt="">
             <img src="./paypal.png" alt="">
@@ -61,76 +71,103 @@
 </section>
 
 <section>
-    <div>
-        <div>
+    <div class="feature-box">
+    <div class="fe-container">
+        <div class="feature-text">
             <h1>Some good place to where can bulid your startup business</h1>
             <p>Co-working offers beautifully crafted workspaces where people can create,connect,and grow their business at prime location in multiple cities.</p>
-            <div>
-                <div>
+            <div class=" feature-list">
+                <div class="fea-items">
                     <h1>1000ft2</h1>
                     <p>you will get 1000ft square space facility here.</p>
                 </div>
-                <div>
+                <div class="fea-items">
                     <h1>80 Members</h1>
                     <p>you will get advantage to live 80+ member here.</p>
                 </div>
-                <div>
+                <div class="fea-items">
                     <h1>1000 mbps</h1>
                     <p>Internet speed is much better than others.</p>
                 </div>
                 </div>
          </div>
-         <div>
-            <img src="./newwork.png" alt="">
-            <img src="./jam.webp" alt="">
-            <img src="./york.png" alt="">
-         </div>
-    </div>
-</section>
+        </div>
+        <div class="fe-img">
+         <div class="slider">
+            <div class="images">
+            <input type="radio" name="slide" id="img1">
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
 
-<section>
-    <h1>Working space</h1>
-    <h5>Let's meet our interior room decoration</h5>
-    <div>
+            <img src="./newwork.png"  class="im1" alt="">
+            <img src="./jam.webp"  class="im2" alt="">
+            <img src="./york.png"  class="im3" alt="">
+            </div>
+            <div class="dots-auto">
+                <div class="auto-bnt1"></div>
+                <div class="auto-bnt2"></div>
+                <div class="auto-bnt"></div>
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+            </div>
+        </div>
+    </div>
+    </div>
+</section> 
+
+<section id="gallery">
+    <div class="gal-continer">
+        <div class="gal-head">
+            <h1>Working space</h1>
+            <p>Let's meet our interior room decoration</p>
+        </div>
+    <div  class="gal-item">
         <div>
-            <h1>front working space</h1>
             <img src="./newwork.png" alt="">
+            <h1>front working space</h1>
         </div>
         <div>
-            <h1>Meeting corner</h1>
             <img src="./jam.webp" alt="">
+            <h1>Meeting corner</h1>
         </div>        
         <div>
-            <h1>Guest meeting room</h1>
             <img src="./gust.png" alt="">
+            <h1>Guest meeting room</h1>
         </div>
         <div>
-            <h1>Guest rest room</h1>
             <img src="./gustrt.png" alt="">
+            <h1>Guest rest room</h1>
         </div>
         <div>
-            <h1>Single Working space</h1>
             <img src="./work.png" alt="">
+            <h1>Single Working space</h1>
         </div>
         <div>
-            <h1>Kitchen room</h1>
             <img src="./kitchen.png" alt="">
+            <h1>Kitchen room</h1>
         </div>
     </div>
+</div>
     <button>
         Explore More
     </button>
 </section>
 
-<section>
+<section id="price">
     <div>
+        <div class="price-head">
         <h1>Pricing plan</h1>
         <h1>What deal siut you perfect</h1>
-        <div>
-            <button>Monthly Plan</button>
-            <button>Annual Plan</button>
+        <div class="plan-box">
+            <button class="mont">Monthly Plan</button>
+            <button class="annu">Annual Plan</button>
         </div>
-        <div>
+        </div>
+        <div class="price-box">
+        <div class="star-pack">
             <h1>Starter Pack</h1>
             <p>Ultimate access to all course,exercises and assessments</p>
             <p>Free access for all kind of exercise corrections with downloads.</p>
@@ -142,8 +179,8 @@
             <h1>49.99/mo</h1>
            </div> 
         </div>
-        <div>
-            <h1>family Pack</h1>
+        <div class="fam-pack">
+            <h1>Family Pack</h1>
             <p>Ultimate access to all course,exercises and assessments</p>
             <p>Free access for all kind of exercise corrections with downloads.</p>
             <p>Toltal assessment corrections with free download access system</p>
@@ -155,59 +192,67 @@
            </div> 
         </div>
     </div>
-</section>
-
-<section>
-    <div>
-        <div>
-            <h1>We have more than thousand of worldwide happy customer</h1>
-            <p>Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities. </p>
-            <button>
-                Learn more
-            </button>
-        </div>
-        <div>
-            <img src="./customer.png" alt="">
-        </div>
     </div>
 </section>
 
 <section>
-    <div>
+    <div class="pepole-con">
+        <div class="peopl-img">
+            <img src="./customer.png" alt="">
+        </div>
+        <div class="pepo-text">
+            <h1>We have more than thousand of worldwide happy customer</h1>
+            <p>Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities. </p>
+            <button class="pep-bnt">
+                Learn more
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="bolg-con">
+        <div class="blog-head">
         <h1>Blog Post</h1>
         <h4>Popular blog post we update everyday</h4>
-        <div>
+        </div>
+        <div class="blog-item">
+        <div class="blog-list">
             <img src="./adobe.png" alt="">
             <h1>How to work with prototype design with adobe xd featuring tools</h1>
             <span>22 Comments</span>
         </div>
-        <div>
+        <div class="blog-list">
             <img src="./figma.png" alt="">
             <h1>Create multiple artboard by using figma prototyping development</h1>
             <span>15 Comments</span>
         </div>
-        <div>
+        <div class="blog-list">
             <img src="./adobe.png" alt="">
             <h1>Convert your web layout theming easily with sketch zeplin extension</h1>
             <span>18 Comments</span>
         </div>
     </div>
+    </div>
 </section>
 
-<footer>
+<footer id="footer">
+    <div class="fooot-sub">
     <h1>Subscribe to get best offers.</h1>
     <p>By subscribing with your mail,you will agree with terms</p>
-    <div>
+    <div class="foot-email">
      <input type="email" placeholder="Enter your email">
      <button>
         Subscribe us
      </button>
     </div>
+</div>
     <hr>
-    <div>
-    <a href=""><img src="./logo.svg" alt=""></a>
-    <p>All right reserved-Design & developed by RedQ,Inc</p>
-    <ul>
+    <div class="foot-menu">
+    <h1 class="foot-log"><a href=""><img src="./logo1.png" alt="">Startup Landing</a></h1>
+    <p class="foot-logo">All right reserved-Design & developed by RedQ,Inc</p>
+    <ul class="foot-ul">
         <a href=""><li>Home</li></a>
         <a href=""><li>Advertise</li></a>
         <a href=""><li>Supports</li></a>
@@ -215,6 +260,16 @@
         <a href=""><li>FAQ</li></a>
     </ul>
 </div>
-</footer> --> -->
+</footer>
+<script>
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('img' + counter).checked = true;
+        counter++;
+        if(counter >3){
+            counter=1;
+        }
+    },3000);
+</script>
 </body>
 </html>
