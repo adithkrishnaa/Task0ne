@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Landing</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
 </head>
 <body>
     <header>
@@ -12,16 +13,21 @@
         <div class="nav-titel">
             <a href="#"><img src="./logo.svg" alt=""></a>
         </div>
-        <div class="menu-bar">
-            <ul class="manu-ul">
+        <label class="nav-bar" id="icon">
+            <i class="fa fa-bars"></i>
+        </label> 
+            <ul class="mnu-ul">
                 <li class="menu-li"><a href="#"></a>Home</li>
                 <li class="menu-li"><a href=""></a>Clients</li>
                 <li class="menu-li"><a href=""></a>Feature</li>
                 <li class="menu-li"><a href=""></a>Gallery</li>
                 <li class="menu-li"><a href=""></a>Pricing</li>
                 <li class="menu-li"><a href=""></a>Blog</li>
+                <button class="menu-bnt">
+                    Jion us now
+                </button>
             </ul>
-        </div>
+
         <div class="nav-list">
             <ul class="nav-ul">
                 <li class="nav-li"><a href="#">Home</a></li>
@@ -262,6 +268,13 @@
 </div>
 </footer>
 <script>
+
+const menuBtn = document.querySelector('.nav-bar');
+const navBar = document.querySelector('nav ul');
+menuBtn.addEventListener('click',()=>{
+    navBar.classList.toggle('showmenu');
+})
+
     var counter = 1;
     setInterval(function(){
         document.getElementById('img' + counter).checked = true;
