@@ -17,6 +17,7 @@ nav{
     padding: 2rem;
     margin-left: 6%;
     background-color:transparent;
+    z-index: 1;
 }
 
 
@@ -248,9 +249,42 @@ select{
 
 .gal-item{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
+.box{
+    width: 50%;
+}
+
+.box-img{
+    position: relative;
+}
+
+.box-name{
+    position:absolute;
+    
+}
+
+#gallery{
+    justify-content: center;
+    text-align: center;
+}
+.gal-bnt{
+    justify-content: center;
+    font-size: 2rem;
+    border: #f8e9e9;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.gal-bnt:hover{
+    background-color: #792385;
+    color: #f8e9e9;
+}
 #price{
     background: #0d091f;
     color: #ffff;
