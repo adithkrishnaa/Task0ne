@@ -545,4 +545,52 @@ select{
     .showmenu{
         display: block;
     }
+
+    .header-content{
+        width: 100%;
+    }
+
+    .client-img{
+        flex-wrap: wrap;
+    }
+
+    .feature-box{
+        flex-wrap: wrap;
+    }
+
+    .gal-item{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .price-box{
+        flex-direction: column;
+    }
+
+    .pepole-con{
+        flex-direction: column-reverse;
+    }
+
+    .pepo-text{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .peopl-img{
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .blog-item{
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foot-ul{
+        flex-direction: column;
+    }
 }
