@@ -91,10 +91,11 @@ nav button{
     margin-top: 10%;
     padding: 2rem;
     background-color:white;
+    
     margin-left: 10%;
     justify-content: center;
     width: 30%;
-    border: 1px solid;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -249,23 +250,18 @@ select{
 
 .gal-item{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.box{
-    width: 50%;
+
+.box img{
+    width:400px ;
+    border-radius: 10px;
+    transition: all 1s;
 }
 
-.box-img{
-    position: relative;
-}
-
-.box-name{
-    position:absolute;
-    
+.box img:hover{
+    transform: scale(.8);
 }
 
 #gallery{
@@ -288,6 +284,10 @@ select{
 #price{
     background: #0d091f;
     color: #ffff;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom:2rem ;
+    
 }
 .price-head{
     text-align: center;
@@ -326,12 +326,22 @@ select{
 }
 
 .price-box{
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2rem;
 }
 
+.price-arrow{
+    display: flex;
+}
+
+.price-arrow i{
+    font-size: 20px;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
 .star-pack{
     width: max-content;
     padding: 2rem;
@@ -339,6 +349,9 @@ select{
     border-radius: 10px;
 }
 
+.star-pack p{
+    font-size: 1.1rem;
+}
 .fam-pack{
     width: max-content;
     padding: 2rem;
@@ -348,6 +361,19 @@ select{
     border: 1px solid rgb(12, 12, 29);
 }
 
+.fam-pack p{
+    font-size: 1.1rem;
+}
+
+.check-ci{
+    margin: 10px;
+    color: rgb(65, 197, 65); 
+    font-size: 1.1rem;
+}
+.no-ci{
+    margin: 10px;
+    color: #4e4d50;
+}
 .pepole-con{
     display: flex;
     justify-content: center;
@@ -398,6 +424,11 @@ select{
     font-weight: 600;
 }
 
+.blog-list h1{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
 .blog-item{
     display: flex;
     margin: 3rem;
@@ -564,7 +595,10 @@ select{
     }
 
     .price-box{
+        display: flex;
         flex-direction: column;
+        padding-left: 0;
+        width:600px;
     }
 
     .pepole-con{
@@ -590,7 +624,25 @@ select{
         text-align: center;
     }
 
+    .blog-list h1{
+        text-align: center;
+    }
+
+    .blog-list span{
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    #footer{
+        margin-top: 2rem;
+    }
+
+    .foot-menu{
+        display: inline;
+        justify-items: center;
+    }
+
     .foot-ul{
-        flex-direction: column;
+        display: flex;
     }
 }
